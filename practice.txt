@@ -1,1 +1,8 @@
 Currently doing all top 100 liked questions in leetcode
+
+ailias in function works for parameters that is not just int, bool, float, etc
+
+there are no pointers in python
+
+there are references in python
+can be used like pointers
