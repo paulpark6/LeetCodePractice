@@ -12,3 +12,5 @@ if you want to set a current pointer to the end of the linked list, set the poin
 
 Python switch case is not valid
 
+"Self" in parameters -> instance of class
+                     -> can access things in the class using self
