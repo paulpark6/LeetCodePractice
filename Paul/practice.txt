@@ -6,3 +6,9 @@ there are no pointers in python
 
 there are references in python
 can be used like pointers
+
+For linked list
+if you want to set a current pointer to the end of the linked list, set the pointer equal to what you want to point to
+
+Python switch case is not valid
+
