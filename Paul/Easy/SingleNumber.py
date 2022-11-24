@@ -5,7 +5,7 @@ class Solution:
         for num in nums:
             if num not in num_count:
                 num_count[num] = 1
-            else:
+            else: 
                 num_count[num] += 1
         for num  in num_count:
             if (num_count[num] == 1):
