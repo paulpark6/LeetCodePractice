@@ -1,10 +1,8 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         s = str(x)
-        l = len(s)
-        pos = l-1
-        for i in range(l//2):
-            if s[i] != s[pos]:
+        n = len(s)
+        for i in range(n//2):
+            if s[i] != s[-(i+1)]:
                 return False
-            pos -= 1
         return True
