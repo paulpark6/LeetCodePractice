@@ -1,10 +1,14 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
-        tri = [[1]]
-        for rowPos in range(numRows-1):
-            tmp = [0] + tri[-1] + [0]
-            row = list()
-            for i in range(len(tri[-1])+1):
-                row += [tmp[i] + tmp[i+1]]
-            tri+= [row]
-        return tri
+        triangle = [[1]]
+        if numRows == 1:
+            return triangle
+        for r in range(numRows-1):
+            row = r + 1
+            f_row = [0] + triangle[r] + [0]
+            a_row = list()
+            f_len = len(f_row)
+            for i in range(f_len-1):
+                a_row.append(f_row[i] + f_row[i+1])
+            triangle.append(a_row)
+        return triangle
