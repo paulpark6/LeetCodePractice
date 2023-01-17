@@ -3,17 +3,16 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        tmp = list()
-        c = 0 # count zeros
-        for num in nums:
-            if num != 0:
-                tmp.append(num)
-            else:
-                c += 1
-        for i in range(len(tmp)):
-            nums[i] = tmp[i]
-        for i in range(c):
-            nums[-1 * (i + 1)] = 0
-        
-                
-        
+        n = len(nums)
+        c_zero = 0
+        i = 0
+        while(i < n):
+            num = nums[i]
+            if num == 0:
+                nums.pop(i)
+                c_zero +=1
+                n -= 1
+                i -= 1
+            i += 1
+        for i in range(c_zero):
+            nums.append(0)
